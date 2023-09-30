@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/success_message.css" /> -->
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-card-container">
+        <div class="grid-container_left"></div>
+        <div class="grid-container_rigth">
+          <div class="grid-container_rigth__content">
+            <h1 class="grid-container_rigth__title">Stay updated!</h1>
+            <p class="grid-container_rigth__paragraph">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="grid-container_rigth__ul">
+              <li class="grid-container_rigth__li">
+                Product discovery and building what matters
+              </li>
+              <li class="grid-container_rigth__li">
+                Measuring to ensure updates are a success
+              </li>
+              <li class="grid-container_rigth__li">And much more!</li>
+            </ul>
+            <form action="" id="form">
+              <label for="email">
+                <p>Email address</p>
+                <p class="invalid-email" id="invalid"></p>
+              </label>
+              <input
+                type="text"
+                id="email"
+                placeholder="email@company.com"
+                autocomplete="email"
+                class="valid"
+              />
+              <button class="subscribe-btn" id="btn-submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

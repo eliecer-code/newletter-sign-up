@@ -1,0 +1,96 @@
+.success-message_start {
+    display: flex;
+    top: 0;
+    background: var(--White);
+    height: 100%;
+    /* padding: 1.5em; */
+    position: absolute;
+    width: 100%;
+
+    /* margin-top: 3em; */
+    /* display: none; */
+    & .success-message_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 3em;
+
+        & .success-message_thanks {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 2em;
+
+            & .success-message-thanks_msj {
+                font-size: 2.4em;
+                color: var(--Dark_Slate_Grey);
+                font-weight: 700;
+            }
+
+            & .success-message-confirmation {
+                font-size: 1em;
+                color: var(--Charcoal_Grey);
+                line-height: 1.5em;
+
+                & .success-message-email {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        & .dimiss-message {
+            width: 100%;
+            padding: 1.4em 0;
+            border-radius: .6em;
+            border: none;
+            outline: none;
+            background: var(--Dark_Slate_Grey);
+            color: var(--White);
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            ;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
+
+        & .dimiss-message:hover {
+            background: var(--Tomato);
+        }
+    }
+
+}
+
+@media (min-width:1200px) {
+    .success-message_start {
+        background: var(--Dark_Slate_Grey);
+        justify-content: center;
+        align-items: center;
+        /* padding: 0; */
+        /* left: 0; */
+        /* right: 0; */
+
+        & .success-message_card {
+            background: var(--White);
+            width: 400px;
+            height: 400px;
+            /* padding: 3em 4em; */
+            border-radius: 2em;
+            gap: 2em;
+
+            & .success-message_thanks {
+                & .success-message-thanks_msj {
+                    font-size: 3em;
+                }
+
+                & .success-message-confirmation {
+                    font-size: 1.1em;
+                }
+            }
+
+            & .dimiss-message {}
+        }
+
+    }
+}
